@@ -123,7 +123,7 @@
  *
  * :[2400, 9600, 19200, 38400, 57600, 115200, 250000, 500000, 1000000]
  */
-#define BAUDRATE 250000
+#define BAUDRATE 115200
 
 // Enable the Bluetooth serial interface on AT90USB devices
 //#define BLUETOOTH
@@ -395,9 +395,9 @@
   //#define DEFAULT_Kd 440
 
   // E3D v6 - M303 C5 E0 S200
-  #define  DEFAULT_Kp 37.52
-  #define  DEFAULT_Ki 3.88
-  #define  DEFAULT_Kd 90.66
+  #define DEFAULT_Kp 28.23
+  #define DEFAULT_Ki 3.13
+  #define DEFAULT_Kd 63.60
 
 #endif // PIDTEMP
 
@@ -448,10 +448,10 @@
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 
-  //Autotuned M303 C5 E-1 S60, cheap 12V PCB Mk2 heatbed
-  #define DEFAULT_bedKp 760.98
-  #define DEFAULT_bedKi 142.91
-  #define DEFAULT_bedKd 1013.06
+  //Autotuned M303 C5 E-1 S80, cheap 12V PCB Mk2 heatbed
+  #define DEFAULT_bedKp 910.25
+  #define DEFAULT_bedKi 176.37
+  #define DEFAULT_bedKd 1174.45
 
 #endif // PIDTEMPBED
 
